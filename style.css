@@ -146,6 +146,7 @@ form {
 #submit-btn {
     border: 0;
     cursor: pointer;
+    background:transparent;
 }
 
 .searchbox .search-icon {
