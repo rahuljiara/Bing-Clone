@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.323);
+    backdrop-filter: blur(2px);
+}
+
+.navbar .nav-left {
+    width: 20%;
+    height: 100%;
+}
+
+.navbar .nav-left-logo img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.navbar .nav-left-logo p {
+    margin-left: 10px;
+}
+
+/* Nav Middle CSS */
+
+.navbar .nav-middle {
+    width: 50%;
+    height: 100%;
+}
+
+.navbar .nav-middle .nav-middle-links {
+    gap: 25px;
+    margin: 25px;
+}
+
+.navbar .nav-middle .nav-middle-links a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+
+.navbar .nav-middle .nav-middle-links a img {
+    height: 15px;
+}
+
+#dot-menu {
+    font-size: 30px;
+    padding-bottom: 20px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar .nav-middle .nav-middle-links p:hover,
+.navbar .nav-middle .nav-middle-links a:hover {
+    color: rgb(255, 69, 69);
+}
+
+/* Nav Right CSS */
+
+.nav-right {
+    width: 30%;
+    height: 100%;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.nav-right .nav-right-account i {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 50%;
+    border: 3px solid rgb(230, 230, 230);
+    color: rgb(230, 230, 230);
+    margin-left: 5px;
+
+}
+
+.nav-right .nav-right-reward img {
+    height: 30px;
+    width: 30px;
+    padding-top: 1px;
+    border-radius: 50%;
+    border: 3px solid rgb(230, 230, 230);
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.nav-right-menu i {
+    font-size: 30px;
+    color: rgb(230, 230, 230);
+}
+
+.nav-right-reward,
+.nav-right-menu,
+.nav-right-account {
+    cursor: pointer;
+}
+
+.nav-right-reward:hover,
+.nav-right-menu:hover,
+.nav-right-account:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+/* Search Box */
+form {
+    z-index: 1;
+    height: 50px;
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.searchbox {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    margin-top: 150px;
+    background: white;
+    border-radius: 50px;
+}
+
+#submit-btn {
+    border: 0;
+    cursor: pointer;
+}
+
+.searchbox .search-icon {
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    display: flex;
+}
+
+.searchbox .search-icon i,
+.mic-icon i {
+    color: grey;
+    font-size: 30px;
+    margin-top: 5px;
+
+}
+
+.searchbox .input {
+    width: 77%;
+    height: 40px;
+}
+
+.searchbox .input input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    color: black;
+    font-size: 18px;
+
+}
+
+.mic-icon {
+    height: 40px;
+    width: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10px;
+}
+
+.mic-icon i {
+    color: rgb(23, 74, 228);
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.camera-icon img {
+    width: 30px;
+    margin: 3px 15px 0 0;
+    cursor: pointer;
+}
+
+.copilot-container {
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -70px;
+
+}
+
+.copilot-container img {
+    width: 50px;
+    padding-top: 5px;
+}
+
+/* Language Container */
+.lang-container {
+    width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    padding: 3px 20px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.323);
+    backdrop-filter: blur(.1px);
+}
+
+.lang-container .lang-data {
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* footer */
+.feedback {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#btn-feedback {
+    padding: 0 10px;
+    border-bottom: 1px solid grey;
+    height: 30px;
+    width: fit-content;
+    background: white;
+    margin-right:10px;
+}
+
+.feedback-text,
+.feedback-icon i {
+    color: rgb(23, 74, 228);
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* fedback form */
+
+.feedback-form {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 380px;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 15px;
+}
+
+.feedback-form-head {
+    height: 80px;
+    justify-content: left;
+}
+
+.feedback-form-head h2 {
+    text-align: left;
+    color: black;
+}
+
+.feedback-form-head p {
+    height: 50px;
+    margin-top: 5px;
+    color: rgb(55, 55, 55);
+}
+
+.feedback-form-select-area div {
+    color: rgb(56, 56, 56);
+    align-items: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feedback-form-text-area p {
+    color: rgb(56, 56, 56);
+}
+
+.feedback-form-text-area p span {
+    color: rgb(255, 0, 0);
+}
+
+.feedback-form-text-area textarea {
+    height: 100px;
+    width: 100%;
+    resize: none;
+    color:black;
+}
+
+.feedback-form-screenshot,
+.feedback-form-response {
+    height: 40px;
+    color: rgb(56, 56, 56);
+    background: rgba(128, 128, 128, 0.151);
+    justify-content: left;
+}
+
+.feedback-form-screenshot p,
+.feedback-form-response p {
+    color: rgb(56, 56, 56);
+    margin-left: 10px;
+}
+
+.feedback-form-screenshot input[type="checkbox"],
+.feedback-form-response input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+}
+
+.feedback-form-response {
+    background: transparent;
+}
+
+.feedback-form-response-info p {
+    color: rgb(85, 85, 85);
+}
+
+.feedback-form-privacy {
+    height: 30;
+    margin-top: 10px;
+}
+
+.feedback-form-privacy a {
+    color: rgb(23, 74, 228);
+    text-decoration: none;
+}
+
+.feedback-form-legal-issue {
+    height: 30;
+    color: rgb(85, 85, 85);
+    /* margin-top:10px; */
+}
+
+.feedback-form-legal-issue a {
+    color: rgb(23, 74, 228);
+}
+
+.feedback-form-btn {
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.feedback-form-btn button {
+    width: 48%;
+    height: 30px;
+    color: rgb(85, 85, 85);
+}
+
+.feedback-form-btn button[type="submit"] {
+    background-color: rgb(57, 106, 253);
+    border: 0;
+    color: white;
+}

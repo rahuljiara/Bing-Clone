@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cd2934c914.js" crossorigin="anonymous"></script>
+    <title>Bing Clone</title>
+    <link rel="shortcut icon" href="img/bing.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Important Links -->
+
+    <!--
+        RAHUL JI ARA
+        <i class="fa-solid fa-magnifying-glass"></i>    -> Search Icon
+        <i class="fa-solid fa-location-dot"></i>        -> Location Icon
+        <i class="fa-solid fa-angle-right"></i>         -> Right Arrow Icon
+        <i class="fa-solid fa-angle-left"></i>          -> Left Arrow Icon
+        <i class="fa-solid fa-angle-down"></i>          -> Down Arrow Icon
+        <i class="fa-solid fa-message"></i>             -> Comment Icon
+        <i class="fa-solid fa-microphone"></i>          -> Mic Icon
+        <i class="fa-solid fa-user"></i>                -> USer Icon
+        <i class="fa-solid fa-bars"></i>                -> Menu Icon 
+        
+    -->
+
+    <!-- Navbar Start -->
+    <div class="navbar flex">
+
+        <div class="nav-left flex">
+            <div class="nav-left-logo flex">
+                <img src="img/microsoft-logo.png">
+                <p> Microsoft Bing</p>
+            </div>
+            <div class="nav-left-logotext"></div>
+        </div>
+
+        <div class="nav-middle flex">
+            <div class="nav-middle-links flex">
+                <a href=""><img src="img/copilot.png">Copilot</a>
+                <a href="">Images</a>
+                <a href="">Videos</a>
+                <a href="">Shopping</a>
+                <a href="">Maps</a>
+                <a href="">News</a>
+                <div id="dot-menu">
+                    <p>. . . </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-right flex">
+            <div class="nav-right-account flex">
+                <div class="nav-right-account-text">Rahul Ji Ara</div>
+                <div class="nav-right-account-img">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <div class="nav-right-reward flex">
+                <div class="nav-right-reward-text">7250</div>
+                <div class="nav-right-reward-img">
+                    <img src="img/reward.png">
+                </div>
+            </div>
+
+            <div class="nav-right-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Navbar End -->
+
+    <!-- Input Box Start -->
+    <form action="https://www.bing.com/search">
+        <div class="searchbox flex">
+            <div class="search-icon">
+                <button type="submit" id="submit-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="input">
+                <input type="search" name="q" placeholder="Ask me anything">
+            </div>
+            <div class="mic-icon">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+            <div class="camera-icon">
+                <img src="img/camera.png">
+            </div>
+        </div>
+
+        <div class="copilot-container flex">
+            <a href="https://www.bing.com/chat?q=" target="_blank"><img src="img/copilot.png"></a>
+        </div>
+    </form>
+    <!-- Input Box End -->
+
+    <!-- Language Box Start -->
+    <div class="lang-container flex">
+        <div class="lang-head">
+            Languages:
+        </div>
+        <div class="lang-data flex">
+            <p> हिंदी </p>
+            <p>বাংলা </p>
+            <p> اردو </p>
+            <p>ਪੰਜਾਬੀ </p>
+            <p>मराठी </p>
+            <p>తెలుగు </p>
+            <p>தமிழ் </p>
+            <p>ಕನ್ನಡ </p>
+            <p>ગુજરાતી </p>
+            <p>മലയാളം </p>
+            <p>ଓଡ଼ିଆ </p>
+        </div>
+    </div>
+    <footer class="feedback flex">
+        <div id="btn-feedback" class="flex" onclick="formOpen()">
+            <div class="feedback-icon">
+                <i class="fa-solid fa-message"></i>
+            </div>
+            <div class="feedback-text">Feedback</div>
+        </div>
+
+        <form id="form-feedback">
+            <div class="feedback-form">
+                <div class="feedback-form-head">
+                    <h2>Feedback About Bing</h2>
+                    <p>Please click on the specific area of the page that your feedback is related to.</p>
+                </div>
+                <div class="feedback-form-select-area">
+                    <div>
+                        <input type="radio" name="area" required> Suggest
+                    </div>
+                    <div>
+                        <input type="radio" name="area" required> Like
+                    </div>
+                    <div>
+                        <input type="radio" name="area" required> Dislike
+                    </div>
+                </div>
+                <div class="feedback-form-text-area">
+                    <p>Enter feedback <span>(required)</span> </p>
+                    <textarea name="feedback" id="feedback-input" required
+                        placeholder="Include detail such as missing or incorrect links. Don't include your name, email or other personal info." >
+                    </textarea>
+                </div>
+                <div class="feedback-form-screenshot flex">
+                    <input type="checkbox" name="screenshot" required>
+                    <p> Include a screenshot</p>
+                </div>
+                <div class="feedback-form-response flex">
+                    <input type="checkbox" name="response" required>
+                    <p>I'd like to hear back about my feedback</p>
+                </div>
+                <div class="feedback-form-response-info">
+                    <p>
+                        By agreeing to hear back from Bing, you agree to receive emails from Microsoft about your
+                        feedback.
+                    </p>
+                </div>
+                <div class="feedback-form-privacy">
+                    <a href="https://privacy.microsoft.com/en-us/privacystatement">Privacy Statement</a>
+                </div>
+                <div class="feedback-form-legal-issue">
+                    Legal or policy issue? <a href="https://www.microsoft.com/en-in/concern/bing">Report a concern</a>
+                </div>
+                <div class="feedback-form-btn flex">
+                    <button type="submit">Send</button>
+                    <button type="reset" onclick="formClose()">Cancel</button>
+                </div>
+            </div>
+        </form>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
