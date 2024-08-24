@@ -1,8 +1,7 @@
 
+// Background Changer In Every 2 Hour
 
 let date = new Date;
-
-// let hr = 5;
 let hr = date.getHours();
 
 document.body.style.backgroundSize = "cover";
@@ -46,13 +45,45 @@ else {
     document.body.style.backgroundImage = "url('img/bg10.jpg')";
 }
 
-
+// Feedback Form Toggle
 let feedbackForm = document.getElementById("form-feedback");
 let feedbackBtn = document.getElementById("btn-feedback");
+let search = document.getElementById("search");
 feedbackForm.style.display = "none";
 function formOpen() {
     feedbackForm.style.display = "block";
+    
 }
 function formClose() {
     feedbackForm.style.display = "none";
 }
+
+
+// Navbar Toggle
+
+let navlist = document.getElementById("nav-list");
+navlist.style.height = "0px";
+let navToggle = () => {
+    if (navlist.style.height == "0px") {
+        navlist.style.height = "100vh";
+        navlist.style.transition = "1s";
+    } else {
+        navlist.style.height = "0";
+        navlist.style.transition = "1s";
+    }
+}
+
+
+// Info Page
+let infoDisc = document.getElementById("info-discription")
+        infoDisc.style.maxHeight = "0vh"
+        const info = () =>{
+          if(  infoDisc.style.maxHeight == "0vh"){
+            infoDisc.style.maxHeight = "100vh"
+            infoDisc.style.transition = ".3s"
+          }
+          else{
+            infoDisc.style.maxHeight = "0vh"
+            infoDisc.style.transition = ".3s"
+          }
+        }
