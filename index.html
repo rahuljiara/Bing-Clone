@@ -33,10 +33,10 @@
         <div class="navbar flex">
 
             <div class="nav-left flex">
-                <div class="nav-left-logo flex">
+                <a href="https://www.microsoft.com/en-us/edge/download" target="_blank" class="nav-left-logo flex">
                     <img src="img/microsoft-logo.png">
                     <p> Microsoft Bing</p>
-                </div>
+                </a>
                 <div class="nav-left-logotext"></div>
             </div>
 
@@ -50,11 +50,11 @@
                                 </div>
                             </a>
                         </li>
-                        <li><a href="https://www.bing.com/images/feed">Images</a></li>
-                        <li> <a href="https://www.bing.com/videos/onecolumn/landing">Videos</a></li>
-                        <li><a href="https://www.bing.com/shop">Shopping</a></li>
-                        <li><a href="https://www.bing.com/maps">Maps</a></li>
-                        <li><a href="https://www.bing.com/news/search?q=Top+stories">News</a></li>
+                        <li><a href="https://www.bing.com/images/feed" target="_blank">Images</a></li>
+                        <li> <a href="https://www.bing.com/videos/onecolumn/landing" target="_blank">Videos</a></li>
+                        <li><a href="https://www.bing.com/shop" target="_blank">Shopping</a></li>
+                        <li><a href="https://www.bing.com/maps" target="_blank">Maps</a></li>
+                        <li><a href="https://www.bing.com/news/search?q=Top+stories" target="_blank">News</a></li>
                     </ul>
                 </div>
             </div>
@@ -127,107 +127,117 @@
                 <p>ଓଡ଼ିଆ </p>
             </div>
         </div>
+        <!-- Language Box End -->
 
+        <!-- Info Button start -->
         <div class="info-btn" onclick="info()">
             <img src="https://cdn-icons-png.flaticon.com/512/189/189664.png">
         </div>
+        <!-- Info button end -->
 
+        <!-- Feedback Button -->
+        <div class="feedback flex">
+            <div id="btn-feedback" class="flex" onclick="formOpen()">
+                <div class="feedback-icon">
+                    <i class="fa-solid fa-message"></i>
+                </div>
+                <div class="feedback-text">Feedback</div>
+            </div>
+        </div>
+        <!-- Info Page Start -->
         <div class="info-disc" id="info-discription">
-            <div class="info-heading"> Important Information </div>
-            <div class="info-message"> Cloning a website involves replicating its structure, content, and functionality
-                to create a
-                new, identical version. Cloning a website without proper authorization or permission is illegal
-                and unethical. Copying copyrighted material without consent can lead to legal consequences. This
-                information is provided for educational purposes only and does not encourage unauthorized
-                website cloning.
-            </div>
-            <div class="website-info">
-                <h2> Key Points </h2>
+            <div class="info-disc-container">
+                <div class="info-heading"> Important Information </div>
+                <div class="info-message"> Cloning a website involves replicating its structure, content, and
+                    functionality
+                    to create a
+                    new, identical version. Cloning a website without proper authorization or permission is illegal
+                    and unethical. Copying copyrighted material without consent can lead to legal consequences. This
+                    information is provided for educational purposes only and does not encourage unauthorized
+                    website cloning.
+                </div>
+                <div class="website-info">
+                    <h2> Key Points </h2>
+                    <br>
+                    <ul>
+                        <li> you can search anything through the search bar </li>
+                        <li> Download Edge Browser By Clicking Microsoft Logo</li>
+                        <li>Background Changes In Every 2 Hours</li>
+                        <li> Some Of the function may not work </li>
+                        <li> You might experience some bugs </li>
+                        <li> Website Cloned By :- <b> Rahul Ji Ara </b> On August 2024 </li>
+                    </ul>
+                </div>
                 <br>
-                <ul>
-                    <li> you can search anything through the search bar </li>
-                    <li> Some Of the function may not work </li>
-                    <li> You might experience some bugs </li>
-                    <li> Website Cloned By :- <b> Rahul Ji Ara </b> On August 2024 </li>
-                </ul>
-            </div>
-            <br> 
-            <div class="social-container">
-                <h3> Social Links </h3>
-                <div id="social-links">
-                    <a href="https://www.github.com/rahuljiara" target="_blank"> <img src="img/github.png" alt="Github">
-                    </a>
+                <div class="social-container">
+                    <h3> Social Links </h3>
+                    <div id="social-links">
+                        <a href="https://www.github.com/rahuljiara" target="_blank"> <img src="img/github.png"
+                                alt="Github">
+                        </a>
 
-                    <a href="mailto:rahuljiara.contact@gmail.com" target="_blank"><img src="img/gmail.png" alt="gmail">
-                    </a>
+                        <a href="mailto:rahuljiara.contact@gmail.com" target="_blank"><img src="img/gmail.png"
+                                alt="gmail">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Feedback Button -->
-    <div class="feedback flex">
-        <div id="btn-feedback" class="flex" onclick="formOpen()">
-            <div class="feedback-icon">
-                <i class="fa-solid fa-message"></i>
-            </div>
-            <div class="feedback-text">Feedback</div>
-        </div>
-    </div>
-
-    <!-- Feedback Form -->
-    <form id="form-feedback">
-        <div class="feedback-form">
-            <div class="feedback-form-head">
-                <h2>Feedback About Bing</h2>
-                <p>Please click on the specific area of the page that your feedback is related to.</p>
-            </div>
-            <div class="feedback-form-select-area">
-                <div>
-                    <input type="radio" name="area" required> Suggest
+        <!-- Feedback Form -->
+        <form id="form-feedback">
+            <div class="feedback-form">
+                <div class="feedback-form-head">
+                    <h2>Feedback About Bing</h2>
+                    <p>Please click on the specific area of the page that your feedback is related to.</p>
                 </div>
-                <div>
-                    <input type="radio" name="area" required> Like
+                <div class="feedback-form-select-area">
+                    <div>
+                        <input type="radio" name="area" required> Suggest
+                    </div>
+                    <div>
+                        <input type="radio" name="area" required> Like
+                    </div>
+                    <div>
+                        <input type="radio" name="area" required> Dislike
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" name="area" required> Dislike
-                </div>
-            </div>
-            <div class="feedback-form-text-area">
-                <p>Enter feedback <span>(required)</span> </p>
-                <textarea name="feedback" id="feedback-input" required
-                    placeholder="Include detail such as missing or incorrect links. Don't include your name, email or other personal info.">
+                <div class="feedback-form-text-area">
+                    <p>Enter feedback <span>(required)</span> </p>
+                    <textarea name="feedback" id="feedback-input" required
+                        placeholder="Include detail such as missing or incorrect links. Don't include your name, email or other personal info.">
                 </textarea>
+                </div>
+                <div class="feedback-form-screenshot flex">
+                    <input type="checkbox" name="screenshot" required>
+                    <p> Include a screenshot</p>
+                </div>
+                <div class="feedback-form-response flex">
+                    <input type="checkbox" name="response" required>
+                    <p>I'd like to hear back about my feedback</p>
+                </div>
+                <div class="feedback-form-response-info">
+                    <p>
+                        By agreeing to hear back from Bing, you agree to receive emails from Microsoft about
+                        your
+                        feedback.
+                    </p>
+                </div>
+                <div class="feedback-form-privacy">
+                    <a href="https://privacy.microsoft.com/en-us/privacystatement">Privacy Statement</a>
+                </div>
+                <div class="feedback-form-legal-issue">
+                    Legal or policy issue? <a href="https://www.microsoft.com/en-in/concern/bing">Report a
+                        concern</a>
+                </div>
+                <div class="feedback-form-btn flex">
+                    <button type="submit">Send</button>
+                    <button type="reset" onclick="formClose()">Cancel</button>
+                </div>
             </div>
-            <div class="feedback-form-screenshot flex">
-                <input type="checkbox" name="screenshot" required>
-                <p> Include a screenshot</p>
-            </div>
-            <div class="feedback-form-response flex">
-                <input type="checkbox" name="response" required>
-                <p>I'd like to hear back about my feedback</p>
-            </div>
-            <div class="feedback-form-response-info">
-                <p>
-                    By agreeing to hear back from Bing, you agree to receive emails from Microsoft about
-                    your
-                    feedback.
-                </p>
-            </div>
-            <div class="feedback-form-privacy">
-                <a href="https://privacy.microsoft.com/en-us/privacystatement">Privacy Statement</a>
-            </div>
-            <div class="feedback-form-legal-issue">
-                Legal or policy issue? <a href="https://www.microsoft.com/en-in/concern/bing">Report a
-                    concern</a>
-            </div>
-            <div class="feedback-form-btn flex">
-                <button type="submit">Send</button>
-                <button type="reset" onclick="formClose()">Cancel</button>
-            </div>
-        </div>
-    </form>
+        </form>
     </div>
+
     <script src="script.js"></script>
 </body>
 

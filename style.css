@@ -8,17 +8,13 @@
 body {
     height: 100vh;
     width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
 .container {
-    height: 100%;
-    width: 100%;
     position: relative;
-    margin: 0;
+    height: 100vh;
+    width: 100%;
 }
 
 .flex {
@@ -45,6 +41,10 @@ body {
     height: 100%;
     margin: 0 20px;
     justify-content: left;
+}
+
+.nav-left-logo {
+    text-decoration: none;
 }
 
 .navbar .nav-left-logo img {
@@ -262,8 +262,8 @@ form {
 
 /* footer */
 .feedback {
-    position: absolute;
-    bottom: 10px;
+    position: fixed;
+    bottom: 0px;
     right: 0px;
 }
 
@@ -284,7 +284,7 @@ form {
 
 /* fedback form */
 #form-feedback {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     width: 380px;
@@ -293,7 +293,7 @@ form {
     border-radius: 10px;
     color: black;
     padding: 15px;
-    z-index: 100;
+    z-index: 10001;
 }
 
 .feedback-form-head {
@@ -403,6 +403,7 @@ form {
     color: white;
 }
 
+
 /* Info Page */
 .info-btn {
     z-index: 1002;
@@ -424,16 +425,16 @@ form {
 
 .info-disc {
     position: fixed;
-    width: 100%;
-    height: 100vh;
     top: 0;
     right: 0;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    background-color: rgb(35, 35, 35);
     align-items: center;
     flex-direction: column;
-    color: rgba(157, 255, 229, 0.849);
     text-align: center;
+    background-color: rgb(35, 35, 35);
+    color: rgba(157, 255, 229, 0.849);
     text-transform: none;
     overflow: hidden;
     font-family: arial;
@@ -458,6 +459,8 @@ form {
 }
 
 .website-info {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -513,7 +516,24 @@ form {
 
 
 
+@media screen and (max-height:650px) {
+    #form-feedback {
+        zoom: .8;
+    }
+}
 
+@media screen and (max-height:370px) {
+    #form-feedback {
+        zoom: .6;
+    }
+}
+
+@media screen and (max-height:265px) {
+    #form-feedback {
+        zoom: .3;
+        overflow: auto;
+    }
+}
 
 
 @media screen and (max-width:1300px) {
@@ -573,7 +593,7 @@ form {
 
     .navbar .nav-middle .nav-middle-links ul {
         flex-direction: column;
-        max-height: calc(100vh - 80px);
+        max-height: calc(100vh - 75px);
         width: 100%;
         background: black;
         position: absolute;
@@ -653,6 +673,11 @@ form {
         padding: 0px;
         font-size: 20px;
     }
+
+    .info-disc {
+        height: 100vh;
+        overflow: auto;
+    }
 }
 
 @media screen and (max-width:460px) {
@@ -673,6 +698,23 @@ form {
     .nav-right {
         margin-right: 5px;
     }
+
+    .info-message {
+        font-size: 14px;
+    }
+
+    .website-info ul {
+        width: 95%;
+        margin: auto;
+        font-size: 12px;
+    }
+
+    .info-heading,
+    .social-container h3,
+    .website-info h2 {
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (max-width:400px) {
@@ -725,7 +767,14 @@ form {
     }
 
     #form-feedback {
-        zoom: .8;
+        zoom: .6;
+        overflow-y: auto;
+    }
+
+    .info-heading,
+    .social-container h3,
+    .website-info h2 {
+        font-size: 18px;
     }
 }
 
@@ -737,28 +786,37 @@ form {
     }
 }
 
-@media screen and (max-height:470px) {
-    .searchbox {
-        margin-top: 50px;
-    }
+@media screen and (max-height:270px) {
 
-    body {
-        position: relative;
-        min-height: 100vh;
-        height: fit-content;
-        width: 100%;
-        overflow: auto;
-    }
 
-    .container {
-        zoom: .8;
-    }
 
 }
 
-@media screen and (max-width:100px) {
+@media screen and (max-height:470px) {
 
-    .container {
+
+    .navbar,
+    form,
+    .lang-container,
+    .info-disc-container,
+    .info-btn,
+    .feedback ,
+    #form-feedback {
+        zoom: .8;
+    }
+    #form-feedback {
+        overflow-y: auto;
+        height: 100%;
+    }
+   
+
+}
+
+@media screen and (max-width:150px),
+screen and (max-height:150px) {
+
+    .container,
+    .feedback {
         display: none;
     }
 
